@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+pre code {
+  display: unset !important;
+}
+
+pre code .line,
+pre:not([data-theme]) {
+  @apply !p-0;
+}
+code,
+pre,
+textarea {
+  @apply !text-sm !font-normal !leading-[18px] !tracking-normal;
+}
+
+.w-code-preview { 
+  @apply !m-0 !rounded-t-md !flex !border-none !shadow-none !rounded-b-none;
+}
+
+textarea {
+  @apply z-10;
+}
+
+.w-code-preview-bordered  { 
+  @apply border-b border-gray-600;
+}

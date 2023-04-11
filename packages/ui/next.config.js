@@ -1,10 +1,16 @@
 /** @type {import('next').NextConfig} */
+const removeImports = require('next-remove-imports')();
+
 const withNextra = require('nextra')({
   theme: 'nextra-theme-docs',
-  themeConfig: './themes.config.tsx'
+  themeConfig: './themes.config.tsx',
+  codeHighlight: false
 });
 
-module.exports = withNextra({
-  transpilePackages: ['data'],
-  reactStrictMode: true
-});
+module.exports = removeImports(
+  withNextra({
+    experimental: { esmExternals: true },
+    transpilePackages: ['data'],
+    reactStrictMode: true
+  })
+);

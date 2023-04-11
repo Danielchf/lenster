@@ -7,25 +7,28 @@ Buttons are to be used as control that triggers an action. The content of the bu
 
 ### Sizes
 
-<Container>
-  <Button size="sm">Login</Button>
-  <Button size="md">Login</Button>
-  <Button size="lg">Login</Button>
-</Container>
+<CodeEditor dependencies={{Button}} code={`
+  <Button size="sm">harish</Button>
+  <Button size="md">harish</Button>
+  <Button size="lg">harish</Button>
+`}>
+</CodeEditor>
 
 ### Variants
 
-<Container>
-  <Button variant="primary">Login</Button>
-  <Button variant="secondary">Signup</Button>
-  <Button variant="warning">Edit</Button>
-  <Button variant="super">Follow</Button>
-  <Button variant="danger">Delete</Button>
-</Container>
+
+<CodeEditor dependencies={{Button}} code={`
+ <Button variant="primary">Primary</Button>
+  <Button variant="secondary">Secondary</Button>
+  <Button variant="warning">Warning</Button>
+  <Button variant="super">Super</Button>
+  <Button variant="danger">Danger</Button>
+`}>
+</CodeEditor>
 
 ### Outline
 
-<Container>
+<CodeEditor dependencies={{Button}} code={`
   <Button outline variant="primary">
     Login
   </Button>
@@ -41,12 +44,14 @@ Buttons are to be used as control that triggers an action. The content of the bu
   <Button outline variant="danger">
     Delete
   </Button>
-</Container>
+`}>
+</CodeEditor>
 
 ### Button with Icon
 
-<Container>
+<CodeEditor dependencies={{Button, PlusIcon}} code={`
   <Button size="sm" outline icon={<PlusIcon className="h-3 w-3" />}>
     Add recipient
   </Button>
-</Container>
+`}>
+</CodeEditor>

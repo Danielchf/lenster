@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "main": "./src/components/index.ts",
-  "files": ["./tailwind-preset.ts"],
+  "files": [
+    "./tailwind-preset.ts"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -31,6 +33,11 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.7",
     "typescript": "5.0.3",
-    "zod": "^3.21.4"
+    "zod": "^3.21.4",
+    "@uiw/react-textarea-code-editor": "^1.4.4",
+    "next-remove-imports": "^1.0.10",
+    "babel-loader": "^9.1.2",
+    "babel-plugin-transform-remove-imports": "^1.7.0",
+    "@uiw/react-code-preview": "^5.1.2"
   }
 }
